@@ -1,6 +1,9 @@
 {
   "language": {
-    "choose": "escolha seu idioma",
+    "button": "Languages",
+    "choose": "escolha seu idioma"
+  },
+  "buttons": {
     "access": "Acessar"
   }
 }
