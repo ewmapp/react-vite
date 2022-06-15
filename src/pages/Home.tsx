@@ -13,17 +13,8 @@ import { Footer } from '../templates/footer'
 import { Helmet } from 'react-helmet-async'
 import { useTranslation } from 'react-i18next'
 
-type lngsProps = {
-  [key: string]: any
-}
-
-const lngs: lngsProps = {
-  en: { nativeName: 'English' },
-  pt: { nativeName: 'Portuguese' }
-}
-
 export function Home() {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   return (
     <Box>
       <Helmet>
@@ -38,42 +29,10 @@ export function Home() {
           </ItemContent>
           <ItemContent>
             <Container>
-              <Text css={{ textAlign: 'center' }}>
-                {t('language.choose', { ns: 'common' })}
-              </Text>
-              <MenuContent>
-                {Object.keys(lngs).map(lng => (
-                  <Button
-                    className="custom-class"
-                    key={lng}
-                    style={{
-                      fontWeight:
-                        i18n.resolvedLanguage === lng ? 'bold' : 'normal'
-                    }}
-                    type="submit"
-                    onClick={() => i18n.changeLanguage(lng)}
-                  >
-                    {lngs[lng].nativeName}
-                  </Button>
-                ))}
-              </MenuContent>
-            </Container>
-            <Section css={{ backgroundColor: '#DBDBDB', width: '100vw' }}>
-              <Container size="3">
-                <Heading variant="black">OBJETIVO</Heading>
-                <Text variant="black">
-                  Discutir abordagens e experiências em inquéritos de saúde,
-                  para contribuir com a construção de inquéritos nacionais de
-                  interesse, no contexto do HIV/aids, das hepatites virais,
-                  outras IST, e da tuberculose e da hanseníase, no País.
-                </Text>
-              </Container>
-            </Section>
-            <Container>
               <MenuContent>
                 <Link to="/live">
                   <Button className="custom-class">
-                    {t('language.access', { ns: 'common' })}
+                    {t('buttons.access', { ns: 'common' })}
                   </Button>
                 </Link>
               </MenuContent>
