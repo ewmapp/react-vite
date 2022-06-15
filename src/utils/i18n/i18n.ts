@@ -23,7 +23,8 @@ i18n
     ns: [
       namespaces.pages.home,
       namespaces.pages.live,
-      namespaces.common.language
+      namespaces.common.language,
+      namespaces.common.buttons
     ],
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json'
