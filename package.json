@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@radix-ui/colors": "^0.1.8",
+    "@radix-ui/react-icons": "^1.1.1",
     "@stitches/react": "^1.2.8",
     "@types/lodash.merge": "^4.6.7",
     "i18next": "^21.8.9",
