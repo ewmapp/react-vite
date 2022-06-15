@@ -1,5 +1,6 @@
 export * from './box'
 export * from './container'
+export * from './dropdownLang'
 export * from './flex'
 export * from './heading'
 export * from './imageBox'
